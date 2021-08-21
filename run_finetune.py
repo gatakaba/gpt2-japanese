@@ -3,13 +3,14 @@
 import argparse
 import json
 import os
+import time
+from copy import copy
+
+import model
 import numpy as np
 import tensorflow.compat.v1 as tf
-import time
 import tqdm
-from copy import copy
 from encode_bpe import BPEEncoder_ja
-import model
 
 if int(tf.__version__[0]) > 1:
     from model import HParams as HParams

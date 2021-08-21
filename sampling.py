@@ -1,6 +1,5 @@
-import tensorflow.compat.v1 as tf
-
 import model
+import tensorflow.compat.v1 as tf
 
 
 def top_k_logits(logits, k):

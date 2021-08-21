@@ -1,11 +1,12 @@
+import argparse
 import json
 import os
+
+import model
 import numpy as np
 import tensorflow.compat.v1 as tf
-import argparse
-from tqdm import tqdm
-import model
 from encode_bpe import BPEEncoder_ja
+from tqdm import tqdm
 
 if int(tf.__version__[0]) > 1:
     from model import HParams as HParams

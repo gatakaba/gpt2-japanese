@@ -1,6 +1,7 @@
-import numpy as np
-import jaconv
 import re
+
+import jaconv
+import numpy as np
 
 
 class BPEEncoder_ja:
@@ -105,11 +106,12 @@ class BPEEncoder_ja:
 
 if __name__ == "__main__":
     import argparse
-    import os
     import json
-    from tqdm import tqdm
+    import os
     import pickle
     from multiprocessing import Pool
+
+    from tqdm import tqdm
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--src_dir", help="source dir", required=True)

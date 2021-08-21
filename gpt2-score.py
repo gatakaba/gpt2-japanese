@@ -1,8 +1,9 @@
+import argparse
 import json
 import os
 import sys
+
 import tensorflow.compat.v1 as tf
-import argparse
 
 if int(tf.__version__[0]) > 1:
     from model import HParams as HParams
